@@ -1,11 +1,11 @@
 #输入的视频文件
-input: D:\download\ChainsawMan-03.mp4
+input: D:\PyCharm\workplace\Fed_Learn\auto_ai_subtitle\video\test0.mp4
 #中间过程会生成的音频文件
-output: D:\download\ChainsawMan-03.mp3
+output: D:\PyCharm\workplace\Fed_Learn\auto_ai_subtitle\video\test0.mp3
 #生成的原始字幕文件
-srt_path: D:\download\ChainsawMan-03.srt
+srt_path: D:\PyCharm\workplace\Fed_Learn\auto_ai_subtitle\video\test0.srt
 #生成的翻译后的字幕文件
-srt_translate_path: D:\download\ChainsawMan-03-zh.srt
+srt_translate_path: D:\PyCharm\workplace\Fed_Learn\auto_ai_subtitle\video\test0-zh.srt
 #翻译时开启多少线程
 translate_threads: 10
 #翻译源语言
