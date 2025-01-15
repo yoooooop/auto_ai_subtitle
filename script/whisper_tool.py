@@ -60,9 +60,12 @@ def load_model_bin(model_path, device):
     return whisper_model
 
 
-def do_whisper(audio, srt_path, language, hf_model_path, device):
+def do_whisper(audio, srt_path, language, model_download_path, hf_model_path, device):
     if hf_model_path == "":
-        model = whisper.load_model("base")
+        if model_download_path:
+            model = whisper.load_model("small", download_root=model_download_path)
+        else:
+            model = whisper.load_model("base")
     else:
         model = load_model_bin(hf_model_path, device)
     print("whisper working...")
